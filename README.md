@@ -1,2 +1,2 @@
-<h3>Teachers submit hours worked with students.</h3>
-<h3>Helps calculate monthly pay role.</h3>
+<h4>Teachers submit hours worked with students.</h4>
+<h4>Calculate monthly pay role.</h4>
