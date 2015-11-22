@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-
   resources :time_threads
+
 =begin
-  do
+  resources :time_threads do
     resources :time_posts, module: :time_threads
   end
 
