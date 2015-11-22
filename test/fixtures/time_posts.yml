@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  time_thread_id: 1
+  user_id: 1
+  month: 1
+  day: 1
+  minute: 1
+
+two:
+  time_thread_id: 1
+  user_id: 1
+  month: 1
+  day: 1
+  minute: 1

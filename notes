@@ -1,0 +1,2 @@
+rails g model TimeThread user_id:integer student_name:string
+rails g model TimePost time_thread_id:integer user_id:integer month:integer day:integer minute:integer
