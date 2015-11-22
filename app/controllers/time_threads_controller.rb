@@ -1,7 +1,11 @@
 class TimeThreadsController < ApplicationController
+  before_action :set_time_thread, except: [:index, :new, :create]
 
   def index
     @time_threads = TimeThread.all
+  end
+
+  def show
   end
 
   def new
@@ -21,7 +25,7 @@ class TimeThreadsController < ApplicationController
   private
 
     def set_time_thread
-      @teacher_thread = TeacherThread.find(params[:id])
+      @time_thread = TimeThread.find(params[:id])
     end
 
     def time_thread_params
