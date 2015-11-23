@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :time_threads
 
-=begin
   resources :time_threads do
     resources :time_posts, module: :time_threads
   end
@@ -12,7 +10,6 @@ Rails.application.routes.draw do
       post :import
     end
   end
-=end
 
   root to: "time_threads#index"
 end

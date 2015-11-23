@@ -7,4 +7,8 @@ class TimePost < ActiveRecord::Base
   #validates_numericality_of :month, less_than: 13
   validates :day, presence: true
   validates :minute, presence: true
+
+  def user
+    User.unscoped { super }
+  end
 end
