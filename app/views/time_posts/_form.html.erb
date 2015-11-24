@@ -1,0 +1,10 @@
+<%= form_for [@time_thread, @time_post] do |f| %>
+  <div class="form_group">
+    <%= f.text_field :month, placeholder: "month", class: "form-control" %>
+    <%= f.text_field :day, placeholder: "day", class: "form-control" %>
+    <%= f.text_field :minute, placeholder: "minute", class: "form-control" %>
+  </div>
+  <div class="form-group">
+      <%= f.submit class: "btn btn-primary" %>
+    </div>
+  <% end %>

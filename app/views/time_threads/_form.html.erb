@@ -3,14 +3,6 @@
     <%= f.text_field :student_name, placeholder: "student name", class: "form-control" %>
   </div>
 
-  <%= f.fields_for :time_posts do |p| %>
-    <div class="form_group">
-      <%= p.text_field :month, placeholder: "month", class: "form-control" %>
-      <%= p.text_field :day, placeholder: "day", class: "form-control" %>
-      <%= p.text_field :minute, placeholder: "minute", class: "form-control" %>
-    </div>
-  <% end %>
-
   <div class="form-group">
     <%= f.submit class: "btn btn-primary" %>
   </div>

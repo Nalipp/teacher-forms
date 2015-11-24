@@ -1,0 +1,6 @@
+<%= div_for time_post do %>
+  <p class="text-muted">Posted by <%= time_post.id %> <%= local_time_ago time_post.created_at %></p>
+  <p><%= time_post.month %></p>
+  <p><%= time_post.day %></p>
+  <p><%= time_post.minute %></p>
+<% end %>
