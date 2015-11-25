@@ -18,7 +18,7 @@ class TimeThreadsController < ApplicationController
 
   def create
     @time_thread = current_user.time_threads.new time_thread_params
-    @time_thread.time_posts.first.user_id = current_user.id
+    #@time_thread.time_posts.first.user_id = current_user.id
 
     if @time_thread.save
       redirect_to @time_thread
