@@ -3,12 +3,6 @@
     <%= link_to "Submit student time", new_time_thread_path, class: "btn btn-success" %>
   </div>
 
-<!--  <div class="pull-right" style="margin-right: 10px">
-    <%#= search_form_for @q, html: { class: "form-inline" } do |f| %>
-    <%#= f.search_field :subject_or_forum_posts_body_cont, placeholder: "Search...", class: "form-control" %>
-    <%# end %>
-  </div> -->
-
   <h1 class="page-header">Time Threads</h1>
   <%= render @time_threads %>
 </div>
